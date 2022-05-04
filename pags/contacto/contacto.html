@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../styles/style.css">
+    <title>Contacto</title>
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo"><a href="../../index.html"><img src="../../assets/erikalogo.png" alt=""></a></div>
+            <a href="#lateral"><i data-feather="menu" class="header__icon"></i></a>
+            <nav id="lateral">
+                <ul class="nav__links">
+                    <li><a href="../../index.html">HOME</a></li>
+                    <li><a href="../productos/productos.html">PRODUCTOS</a></li>
+                    <li><a href="../empresa/empresa.html">SOBRE NOSOTROS</a></li>
+                    <li><a href="../ubicacion/ubicacion.html">UBICACION</a></li>
+                    <li><a href="#"><i data-feather="x" class="header__icon"></i></a></li>
+                </ul>
+            </nav>
+            <a href="contacto.html" class="btn"><button>Contacto</button></a>
+        </header>
+
+        <!-- //****Contact ****/// -->
+        <div class="contact-container">
+
+            <form action="#" target="" method="get" name="formDatosPersonales">
+
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre" />
+
+                <label for="apellidos">Apellido</label>
+                <input type="text" name="apellidos" id="apellido" placeholder="Apellido" />
+
+                <label for="email" />Email</label>
+                <input type="email" name="email" id="email" placeholder="email" required />
+
+                <label for="asunto">Asunto</label>
+                <input type="text" name="asunto" id="asunto" placeholder="Consulta" />
+
+                <label for="mensaje">Mensaje</label>
+                <textarea name="mensaje" for="mensaje" maxlength="300"></textarea>
+
+                <input type="submit" name="enviar" value="enviar datos" />
+        </div>
+
+
+        <footer>
+
+            <div class="footer-content">
+                <div class="footer__contact">
+                    <a href="#" class="footer__btn"><button>Contacto</button></a>
+                    <p class="footer_paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+                        dolorem
+                        explicabo doloremque
+                        exercitationem totam ipsa, quas, voluptate a minus quis ad odio.</p>
+                    <ul class="socials">
+                        <li> <a href="https://www.facebook.com/alimentoserika/" target="blank"><i
+                                    data-feather="facebook" class="footer__icon"></i></a></li>
+                        <li> <a href="https://www.facebook.com/alimentoserika/" target="blank"><i
+                                    data-feather="instagram" class="footer__icon"></i></a></li>
+                        <li> <a href="#"><i data-feather="mail" class="footer__icon"></i></a></li>
+                    </ul>
+                </div>
+                <div class="footer-bottom">
+                    <p>copyright &copy;2021 valenDesign</p>
+                </div>
+            </div>
+        </footer>
+        <script>feather.replace()</script>
+    </div>
+</body>
+
+</html>
