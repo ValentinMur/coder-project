@@ -162,8 +162,10 @@ a {
 
 .empresa-paragraph {
     color: #fff;
-    font-size: 2em;
+    font-size: 1.1em;
 }
+
+
 
 /***** PRODUCTOS ******/
 
@@ -429,6 +431,7 @@ footer {
         flex-direction: column-reverse;
 
     }
+
 }
 
 @media screen and (max-width: 320px) {
@@ -517,6 +520,9 @@ footer {
         margin-top: 3em;
         font-weight: bold;
     }
+
+
+
 
     /********PRODUCTO MOBILE*********/
 

@@ -15,7 +15,32 @@
 
 <body>
     <header class="header">
-        <div class="logo"><a href="../../index.html"><img src="../../assets/erikalogo.png" alt=""></a></div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled">Disabled</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- <div class="logo"><a href="../../index.html"><img src="../../assets/erikalogo.png" alt=""></a></div>
         <a href="#lateral"><i data-feather="menu" class="header__icon"></i></a>
         <nav id="lateral">
             <ul class="nav__links">
@@ -26,7 +51,7 @@
                 <li><a href="#"><i data-feather="x" class="header__icon"></i></a></li>
             </ul>
         </nav>
-        <a href="../contacto/contacto.html" class="btn"><button>Contacto</button></a>
+        <a href="../contacto/contacto.html" class="btn"><button>Contacto</button></a> -->
     </header>
 
     <div class="empresa">
@@ -39,13 +64,60 @@
                 siendo
                 hoy protagonistas principales del mercado interno.</p>
         </div>
+    </div>
 
-        <div class="card" style="width: 18rem;">
-            <img src="../../assets/pollorelleno.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Pollo relleno</h5>
-                <p class="card-text">Para Navidad, Año Nuevo ¡o todo el año! Probá este pollo que es una bomba.</p>
-                <a href="https://www.youtube.com/watch?v=7gB6hlgv2jY" class="btn btn-primary">Video explicativo</a>
+    <div class="acordion">
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                        aria-controls="panelsStayOpen-collapseOne">
+                        PLANIFICÁ TUS COMPRAS.
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                    aria-labelledby="panelsStayOpen-headingOne">
+                    <div class="accordion-body">
+                        <strong>Hacé una lista de lo que quieras comprar.</strong> Anotá lo que se terminó o lo que
+                        estimás usar en la semana. Revisá bien alacenas y freezer. Muchas veces ya tenemos los
+                        ingredientes y nos los olvidamos por no estar a la vista.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseTwo">
+                        ORGANIZATE EN EL MERCADO.
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingTwo">
+                    <div class="accordion-body">
+                        <strong>Agrupá los alimentos por su forma de conservación.</strong>primero los artículos de
+                        limpieza y perfumería; después los alimentos secos y no perecederos (fideos, harinas, aceites);
+                        luego los frescos o perecederos (frutas, verduras) y por último los refrigerados y congelados
+                        (lácteos, carnes). Así evitarás romper la cadena de frío y tener que tirar algo antes de usarlo.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseThree">
+                        PENSÁ TUS COMIDAS.
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingThree">
+                    <div class="accordion-body">
+                        <strong> Planificar tu menú semanal.</strong>no sólo va a ayudarte a evitar el desperdicio de
+                        comida, vas a ganar en salud y ahorrar en tiempo y dinero.
+                    </div>
+                </div>
             </div>
         </div>
     </div>
