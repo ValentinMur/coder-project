@@ -120,16 +120,16 @@ a {
 
 }
 
-.grid__images {
+/* .grid__images {
     display: block;
     margin-left: auto;
     margin-right: auto;
     border-radius: 10%;
     width: 50%;
     height: auto;
-}
+} */
 
-.feather {
+/* .feather {
     width: 24px;
     height: 24px;
     stroke: currentColor;
@@ -137,7 +137,20 @@ a {
     stroke-linecap: round;
     stroke-linejoin: round;
     fill: none;
-}
+} */
+
+/* .imagenprueba {
+    height: 700px;
+    width: 1500px;
+} */
+
+/* d-block w-100 {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+} */
+
+
 
 /***** EMPRESA ******/
 
