@@ -15,33 +15,8 @@
 <body>
     <!-- <div class="container"> -->
     <header class="header">
-        <img src="../../assets/erikalogo.png" alt="">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../../index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../productos/productos.html">Productos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../empresa/empresa.html">Sobre nosotros</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../ubicacion/ubicacion.html">Ubicacion</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- <div class="logo"><a href="../../index.html"><img src="../../assets/erikalogo.png" alt=""></a></div>
+        <div class="logo"><a href="../../index.html"><img src="../../assets/erikalogo.png" alt=""></a></div>
         <a href="#lateral"><i data-feather="menu" class="header__icon"></i></a>
         <nav id="lateral">
             <ul class="nav__links">
@@ -52,7 +27,7 @@
                 <li><a href="#"><i data-feather="x" class="header__icon"></i></a></li>
             </ul>
         </nav>
-        <a href="contacto.html" class="btn"><button>Contacto</button></a> -->
+        <a href="contacto.html" class="btn"><button>Contacto</button></a>
     </header>
 
     <!-- //****Contact ****/// -->
@@ -77,6 +52,7 @@
 
             <input type="submit" name="enviar" value="enviar datos" />
     </div>
+
 
 
     <footer>
@@ -106,6 +82,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+
+    <script>var toastElList = [].slice.call(document.querySelectorAll('.toast'))
+        var toastList = toastElList.map(function (toastEl) {
+            return new bootstrap.Toast(toastEl, option)
+        })</script>
 </body>
 
 </html>

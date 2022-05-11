@@ -1,4 +1,4 @@
-@import url(normalize.css);
+/* @import url(normalize.css); */
 
 @import url('https://fonts.googleapis.com/css2?family=Abel&family=EB+Garamond:wght@400;500;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100&family=Secular+One&display=swap');
 
@@ -93,7 +93,6 @@ a {
     transform: scale(1.1);
     border: 1px solid #a52a2a;
 }
-
 
 
 /***** WELCOME ******/
@@ -447,6 +446,8 @@ footer {
 
 }
 
+
+
 @media screen and (max-width: 320px) {
 
     .header {
@@ -582,7 +583,9 @@ footer {
 
 @media screen and (max-width: 425px) {
 
+
     .header {
+        display: flex;
         height: 8em;
         flex-direction: row;
         justify-content: space-evenly;
@@ -597,22 +600,25 @@ footer {
     }
 
     #lateral {
+
         display: block;
         width: 80%;
-        height: 100vh;
+        height: 7vh;
         position: fixed;
         top: 0;
         left: -100%;
         background-color: #fff;
         transition: left 1s;
+
     }
 
     #lateral:target {
         left: 0;
     }
 
+
     .nav__links {
-        flex-direction: column;
+        flex-direction: row;
         text-align: start;
     }
 
