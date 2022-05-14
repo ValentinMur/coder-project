@@ -1,0 +1,66 @@
+/***** CONTACTO ******/
+
+
+.contact-container {
+    padding: 10%;
+    background-color: brown;
+    background-image: radial-gradient(#ffffff 0.9500000000000001px, brown 0.9500000000000001px);
+    background-size: 19px 19px;
+
+}
+
+form {
+    border: solid black;
+    font-size: 1.5rem;
+    width: 30em;
+    padding: 5em;
+    border-radius: 10px;
+    margin: auto;
+    background-color: #ccc;
+}
+
+form label {
+    width: 4.5em;
+    font-weight: lighter;
+    display: inline-block;
+}
+
+form input[type="text"],
+form input[type="email"] {
+    width: 11.25em;
+    padding: 3px 10px;
+    border: 1px solid #f6f6f6;
+    border-radius: 3px;
+    background-color: #f6f6f6;
+    margin: 8px 0;
+    display: inline-block;
+}
+
+form input[type="submit"] {
+    width: 100%;
+    padding: 8px 16px;
+    margin-top: 32px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    display: block;
+    color: #fff;
+    background-color: #000;
+}
+
+form input[type="submit"]:hover {
+    cursor: pointer;
+
+    transform: scale(1.1);
+}
+
+textarea {
+    width: 90%;
+    height: 6em;
+    border: 1px solid #f6f6f6;
+    border-radius: 3px;
+    background-color: #f6f6f6;
+    margin: 8px 0;
+    /*resize: vertical | horizontal | none | both*/
+    resize: none;
+    display: block;
+}

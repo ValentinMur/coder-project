@@ -1,2 +1,51 @@
-@import "../parciales/parcial1";
-@import "../parciales/header.scss"
+@import "parciales/_header";
+@import "parciales/index";
+@import "parciales/empresa";
+@import "parciales/productos";
+@import "parciales/ubicacion";
+@import "parciales/contacto";
+@import "parciales/_footer";
+@import "parciales/_mediaquerys.scss";
+
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=EB+Garamond:wght@400;500;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100&family=Secular+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Abel&family=EB+Garamond:wght@400;500;700&family=Heebo:wght@100;300;400&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100&family=Secular+One&display=swap');
+
+
+
+body {
+
+    font-family: 'ABeeZee', sans-serif;
+    font-family: 'Abel', sans-serif;
+    font-family: 'EB Garamond', serif;
+    font-family: 'Heebo', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Secular One', sans-serif;
+    font-size: 16px;
+
+}
+
+.container {
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+}
+
+
+
+/***** WELCOME ******/
+
+/***** EMPRESA ******/
+
+/***** PRODUCTOS ******/
+
+/***** UBICACION ******/
+
+
+
+/***** CONTACTO ******/
+
+/**FOOTER**/
+
+
+/******* MEDIA QUERIS *******/

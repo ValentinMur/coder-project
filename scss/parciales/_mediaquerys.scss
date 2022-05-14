@@ -1,0 +1,265 @@
+/******* MEDIA QUERIS *******/
+
+@media screen and (max-width: 1024px) {
+
+    .header {
+        width: 100%;
+        height: 15em;
+        flex-direction: column;
+        padding: 0;
+        position: relative;
+    }
+
+    nav {
+        position: absolute;
+    }
+
+    a {
+        font-size: medium;
+    }
+
+    .btn {
+        position: absolute;
+        top: 9em;
+    }
+
+    .footer-content {
+
+        flex-direction: column-reverse;
+
+    }
+
+}
+
+
+
+@media screen and (max-width: 320px) {
+
+    .header {
+        height: 8em;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .btn button {
+        display: none;
+    }
+
+    #lateral {
+        display: flex;
+        flex-direction: column;
+        display: block;
+        width: 80%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        background-color: #fff;
+        transition: left 1s;
+    }
+
+    #lateral:target {
+        left: 0;
+    }
+
+    .nav__links {
+        flex-direction: column;
+        text-align: start;
+    }
+
+    .header__icon {
+        display: block;
+        color: black;
+        font-weight: bold;
+    }
+
+    .welcome__welcome {
+        color: #ffffff;
+        font-size: 2rem;
+        text-align: center;
+
+    }
+
+    .grid__images {
+        width: 15em;
+        padding-bottom: 2em;
+    }
+
+    .footer-content {
+        position: relative;
+        height: 20em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+
+    .footer_paragraph {
+        text-align: justify;
+        margin-top: 3em;
+
+    }
+
+    .footer__btn {
+        position: absolute;
+    }
+
+    .socials {
+        position: absolute;
+        right: 2em;
+        bottom: 3em;
+    }
+
+    .footer__paragraph {
+        margin-top: 3em;
+        font-weight: bold;
+    }
+
+
+
+
+    /********PRODUCTO MOBILE*********/
+
+
+
+    .producto-title {
+        font-size: 3em;
+    }
+
+    .producto-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+
+    form {
+        width: 90%;
+        padding: 1em;
+        font-size: 0.01rem;
+
+    }
+
+    label,
+    input {
+        font-size: 0.5rem;
+        padding: 0;
+
+
+
+    }
+
+    textarea {
+        width: 90%;
+    }
+
+    #nombre,
+    #apellido,
+    #email,
+    #asunto {
+        width: 90%;
+    }
+
+
+
+}
+
+@media screen and (max-width: 425px) {
+
+
+    .header {
+        display: flex;
+        height: 8em;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .btn button {
+        display: none;
+    }
+
+    #lateral {
+
+        display: block;
+        width: 80%;
+        height: 7vh;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        background-color: #fff;
+        transition: left 1s;
+
+    }
+
+    #lateral:target {
+        left: 0;
+    }
+
+
+    .nav__links {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .header__icon {
+        display: block;
+        color: black;
+        font-weight: bold;
+    }
+
+    .producto-title {
+        font-size: 3em;
+    }
+
+    .producto-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .contact-container {
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        font-size: 0.6rem;
+    }
+
+    label,
+    input {
+        font-size: 1rem;
+    }
+
+
+}
+
+@media screen and (max-width: 1024px) {
+
+    .container__welcome {
+
+        background-image: radial-gradient(#ffffff 1.3999000000009001px, brown 0.9500000000000001px);
+    }
+
+    .welcome__welcome {
+        position: relative;
+        top: -1.5em;
+        text-shadow: 5px 5px #bb5555;
+    }
+
+    .col {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}

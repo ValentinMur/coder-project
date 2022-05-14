@@ -1,0 +1,23 @@
+.container__welcome {
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    height: 100%;
+    background-color: brown;
+    background-image: radial-gradient(#ffffff 0.9500000000000001px, brown 0.9500000000000001px);
+    background-size: 19px 19px;
+
+}
+
+
+.welcome__welcome {
+    padding: 0.5em;
+    font-size: 3rem;
+    margin-top: 3em;
+    position: relative;
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 5px 5px #bb5555;
+
+}

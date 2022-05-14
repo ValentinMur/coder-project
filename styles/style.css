@@ -590,9 +590,10 @@ footer {
 
 
     .nav__links {
-        flex-direction: row;
-        text-align: start;
+        display: flex;
+        flex-direction: column;
     }
+
 
     .header__icon {
         display: block;

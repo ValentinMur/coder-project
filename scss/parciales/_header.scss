@@ -1,0 +1,69 @@
+.header {
+    z-index: 1;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    height: 12%;
+    padding: 0.3em 10%;
+    position: fixed;
+
+
+}
+
+.logo {
+
+    transition: all 0.3s;
+}
+
+
+.nav {
+    display: flex;
+
+}
+
+.nav__links {
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+    padding: 0 20px;
+
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: large;
+}
+
+.nav__links li:hover {
+    transform: scale(1.1);
+    color: brown;
+}
+
+.nav__links li a:hover {
+    color: brown;
+
+}
+
+.btn button {
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    padding: 9px 25px;
+    background-color: #a52a2a;
+    border: none;
+    border-radius: 3.125rem;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.btn button:hover {
+    background-color: white;
+    color: brown;
+    transform: scale(1.1);
+    border: 1px solid #a52a2a;
+}
