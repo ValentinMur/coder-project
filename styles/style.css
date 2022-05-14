@@ -110,6 +110,7 @@ a {
 
 
 .welcome__welcome {
+    padding: 0.5em;
     font-size: 3rem;
     margin-top: 3em;
     position: relative;
@@ -118,37 +119,6 @@ a {
     text-shadow: 5px 5px #bb5555;
 
 }
-
-/* .grid__images {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 10%;
-    width: 50%;
-    height: auto;
-} */
-
-/* .feather {
-    width: 24px;
-    height: 24px;
-    stroke: currentColor;
-    stroke-width: 1.5;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    fill: none;
-} */
-
-/* .imagenprueba {
-    height: 700px;
-    width: 1500px;
-} */
-
-/* d-block w-100 {
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
-} */
-
 
 
 /***** EMPRESA ******/
@@ -540,6 +510,8 @@ footer {
 
     /********PRODUCTO MOBILE*********/
 
+
+
     .producto-title {
         font-size: 3em;
     }
@@ -654,4 +626,24 @@ footer {
     }
 
 
+}
+
+@media screen and (max-width: 1024px) {
+
+    .container__welcome {
+
+        background-image: radial-gradient(#ffffff 1.3999000000009001px, brown 0.9500000000000001px);
+    }
+
+    .welcome__welcome {
+        position: relative;
+        top: -1.5em;
+        text-shadow: 5px 5px #bb5555;
+    }
+
+    .col {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
 }
