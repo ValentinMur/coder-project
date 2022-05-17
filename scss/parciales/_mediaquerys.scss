@@ -262,4 +262,55 @@
         justify-content: center;
         flex-wrap: wrap;
     }
+
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .header {
+        display: flex;
+        height: 10em;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .btn button {
+        display: none;
+    }
+
+    #lateral {
+
+        display: block;
+        width: 80%;
+        height: 20vh;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        background-color: #fff;
+        transition: left 1s;
+
+    }
+
+    #lateral:target {
+        left: 0;
+    }
+
+
+    .nav__links {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .header__icon {
+        display: block;
+        color: black;
+        font-weight: bold;
+    }
+
 }

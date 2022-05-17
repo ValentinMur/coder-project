@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Abel&family=EB+Garamond:wght@400;500;700&family=Heebo:wght@100;300;400&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100&family=Secular+One&display=swap");
 .header {
   z-index: 1;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -31,7 +31,7 @@ li {
 
 a {
   text-decoration: none;
-  color: black;
+  color: rgb(0, 0, 0);
   font-size: large;
 }
 
@@ -46,7 +46,7 @@ a {
 
 .btn button {
   font-weight: bold;
-  color: white;
+  color: rgb(255, 255, 255);
   padding: 9px 25px;
   background-color: #a52a2a;
   border: none;
@@ -104,7 +104,7 @@ a {
 }
 
 .empresa-paragraph {
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: 1.9em;
 }
 
@@ -147,7 +147,8 @@ a {
   margin: 0px auto;
   max-width: 80%;
   max-height: 500px;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   border-radius: 5%;
 }
 
@@ -156,7 +157,8 @@ a {
   margin: 0px auto;
   max-width: 80%;
   max-height: 500px;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   border-radius: 5%;
 }
 
@@ -205,8 +207,8 @@ form label {
   display: inline-block;
 }
 
-form input[type="text"],
-form input[type="email"] {
+form input[type=text],
+form input[type=email] {
   width: 11.25em;
   padding: 3px 10px;
   border: 1px solid #f6f6f6;
@@ -216,7 +218,7 @@ form input[type="email"] {
   display: inline-block;
 }
 
-form input[type="submit"] {
+form input[type=submit] {
   width: 100%;
   padding: 8px 16px;
   margin-top: 32px;
@@ -227,7 +229,7 @@ form input[type="submit"] {
   background-color: #000;
 }
 
-form input[type="submit"]:hover {
+form input[type=submit]:hover {
   cursor: pointer;
   transform: scale(1.1);
 }
@@ -261,7 +263,7 @@ footer {
 .footer__btn button {
   margin-left: 35%;
   font-weight: bold;
-  color: white;
+  color: rgb(255, 255, 255);
   padding: 0.5em 1.5em;
   background-color: #a52a2a;
   border: none;
@@ -331,33 +333,39 @@ footer {
     padding: 0;
     position: relative;
   }
+
   nav {
     position: absolute;
   }
+
   a {
     font-size: medium;
   }
+
   .btn {
     position: absolute;
     top: 9em;
   }
+
   .footer-content {
     flex-direction: column-reverse;
   }
 }
-
 @media screen and (max-width: 320px) {
   .header {
     height: 8em;
     flex-direction: row;
     justify-content: space-evenly;
   }
+
   nav {
     display: none;
   }
+
   .btn button {
     display: none;
   }
+
   #lateral {
     display: flex;
     flex-direction: column;
@@ -370,27 +378,33 @@ footer {
     background-color: #fff;
     transition: left 1s;
   }
+
   #lateral:target {
     left: 0;
   }
+
   .nav__links {
     flex-direction: column;
     text-align: start;
   }
+
   .header__icon {
     display: block;
     color: black;
     font-weight: bold;
   }
+
   .welcome__welcome {
     color: #ffffff;
     font-size: 2rem;
     text-align: center;
   }
+
   .grid__images {
     width: 15em;
     padding-bottom: 2em;
   }
+
   .footer-content {
     position: relative;
     height: 20em;
@@ -399,51 +413,60 @@ footer {
     justify-content: center;
     flex-direction: column;
   }
+
   .footer_paragraph {
     text-align: justify;
     margin-top: 3em;
   }
+
   .footer__btn {
     position: absolute;
   }
+
   .socials {
     position: absolute;
     right: 2em;
     bottom: 3em;
   }
+
   .footer__paragraph {
     margin-top: 3em;
     font-weight: bold;
   }
+
   /********PRODUCTO MOBILE*********/
   .producto-title {
     font-size: 3em;
   }
+
   .producto-grid {
     display: grid;
     grid-template-columns: 1fr;
   }
+
   form {
     width: 90%;
     padding: 1em;
     font-size: 0.01rem;
   }
+
   label,
-  input {
+input {
     font-size: 0.5rem;
     padding: 0;
   }
+
   textarea {
     width: 90%;
   }
+
   #nombre,
-  #apellido,
-  #email,
-  #asunto {
+#apellido,
+#email,
+#asunto {
     width: 90%;
   }
 }
-
 @media screen and (max-width: 425px) {
   .header {
     display: flex;
@@ -451,12 +474,15 @@ footer {
     flex-direction: row;
     justify-content: space-evenly;
   }
+
   nav {
     display: none;
   }
+
   .btn button {
     display: none;
   }
+
   #lateral {
     display: block;
     width: 80%;
@@ -467,63 +493,114 @@ footer {
     background-color: #fff;
     transition: left 1s;
   }
+
   #lateral:target {
     left: 0;
   }
+
   .nav__links {
     display: flex;
     flex-direction: column;
   }
+
   .header__icon {
     display: block;
     color: black;
     font-weight: bold;
   }
+
   .producto-title {
     font-size: 3em;
   }
+
   .producto-grid {
     display: grid;
     grid-template-columns: 1fr;
   }
+
   .contact-container {
     margin-left: 0;
     margin-top: 0;
   }
+
   form {
     display: flex;
     flex-direction: column;
     font-size: 0.6rem;
   }
+
   label,
-  input {
+input {
     font-size: 1rem;
   }
 }
-
 @media screen and (max-width: 1024px) {
   .container__welcome {
     background-image: radial-gradient(#ffffff 1.3999px, brown 0.95px);
   }
+
   .welcome__welcome {
     position: relative;
     top: -1.5em;
     text-shadow: 5px 5px #bb5555;
   }
+
   .col {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
   }
 }
+@media screen and (max-width: 768px) {
+  .header {
+    display: flex;
+    height: 10em;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
 
+  nav {
+    display: none;
+  }
+
+  .btn button {
+    display: none;
+  }
+
+  #lateral {
+    display: block;
+    width: 80%;
+    height: 20vh;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    background-color: #fff;
+    transition: left 1s;
+  }
+
+  #lateral:target {
+    left: 0;
+  }
+
+  .nav__links {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header__icon {
+    display: block;
+    color: black;
+    font-weight: bold;
+  }
+}
 body {
-  font-family: 'ABeeZee', sans-serif;
-  font-family: 'Abel', sans-serif;
-  font-family: 'EB Garamond', serif;
-  font-family: 'Heebo', sans-serif;
-  font-family: 'Montserrat', sans-serif;
-  font-family: 'Secular One', sans-serif;
+  overflow-x: hidden;
+  font-family: "ABeeZee", sans-serif;
+  font-family: "Abel", sans-serif;
+  font-family: "EB Garamond", serif;
+  font-family: "Heebo", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Secular One", sans-serif;
   font-size: 16px;
 }
 
@@ -539,5 +616,4 @@ body {
 /***** UBICACION ******/
 /***** CONTACTO ******/
 /**FOOTER**/
-/******* MEDIA QUERIS *******/
-/*# sourceMappingURL=style.css.map */
+/******* MEDIA QUERIS *******//*# sourceMappingURL=style.css.map */
