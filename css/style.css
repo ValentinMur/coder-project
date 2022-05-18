@@ -386,6 +386,7 @@ footer {
   .nav__links {
     flex-direction: column;
     text-align: start;
+    height: 1vh;
   }
 
   .header__icon {
@@ -486,7 +487,7 @@ input {
   #lateral {
     display: block;
     width: 80%;
-    height: 7vh;
+    height: 5vh;
     position: fixed;
     top: 0;
     left: -100%;
@@ -570,7 +571,7 @@ input {
   #lateral {
     display: block;
     width: 80%;
-    height: 20vh;
+    height: 15vh;
     position: fixed;
     top: 0;
     left: -100%;
