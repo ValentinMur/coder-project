@@ -555,7 +555,7 @@ input {
 @media screen and (max-width: 768px) {
   .header {
     display: flex;
-    height: 10em;
+    height: 11em;
     flex-direction: row;
     justify-content: space-evenly;
   }
