@@ -196,7 +196,7 @@ form {
   font-size: 1.5rem;
   width: 30em;
   padding: 5em;
-  border-radius: 10px;
+  border-radius: 11px;
   margin: auto;
   background-color: #ccc;
 }
@@ -570,7 +570,7 @@ input {
 
   #lateral {
     display: block;
-    width: 80%;
+    width: 79%;
     height: 20vh;
     position: fixed;
     top: 0;
