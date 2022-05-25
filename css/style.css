@@ -445,9 +445,10 @@ footer {
     grid-template-columns: 1fr;
   }
 
+  /********CONTACT MOBILE*********/
   form {
-    width: 90%;
-    padding: 1em;
+    width: 12rem;
+    padding: 1.5em;
     font-size: 0.01rem;
   }
 
@@ -459,6 +460,7 @@ input {
 
   textarea {
     width: 90%;
+    height: 3rem;
   }
 
   #nombre,
@@ -529,11 +531,13 @@ input {
     display: flex;
     flex-direction: column;
     font-size: 0.6rem;
+    width: 15rem;
   }
 
   label,
 input {
-    font-size: 1rem;
+    font-size: 0.9rem;
+    padding: 0;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -594,6 +598,17 @@ input {
     display: block;
     color: black;
     font-weight: bold;
+  }
+
+  form {
+    width: 19em;
+    font-size: 1.2rem;
+  }
+
+  .footer__btn button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 body {
