@@ -17,40 +17,41 @@ form {
     border-radius: 11px;
     margin: auto;
     background-color: #ccc;
-}
 
-form label {
-    width: 4.5em;
-    font-weight: lighter;
-    display: inline-block;
-}
+    label {
+        width: 4.5em;
+        font-weight: lighter;
+        display: inline-block;
+    }
 
-form input[type="text"],
-form input[type="email"] {
-    width: 11.25em;
-    padding: 3px 10px;
-    border: 1px solid #f6f6f6;
-    border-radius: 3px;
-    background-color: #f6f6f6;
-    margin: 8px 0;
-    display: inline-block;
-}
+    input[type="text"],
+    input[type="email"] {
+        width: 11.25em;
+        padding: 3px 10px;
+        border: 1px solid #f6f6f6;
+        border-radius: 3px;
+        background-color: #f6f6f6;
+        margin: 8px 0;
+        display: inline-block;
+    }
 
-form input[type="submit"] {
-    width: 100%;
-    padding: 8px 16px;
-    margin-top: 32px;
-    border: 1px solid #000;
-    border-radius: 5px;
-    display: block;
-    color: #fff;
-    background-color: #000;
-}
+    input[type="submit"] {
+        width: 100%;
+        padding: 8px 16px;
+        margin-top: 32px;
+        border: 1px solid #000;
+        border-radius: 5px;
+        display: block;
+        color: #fff;
+        background-color: #000;
+    }
 
-form input[type="submit"]:hover {
-    cursor: pointer;
+    input[type="submit"]:hover {
+        cursor: pointer;
 
-    transform: scale(1.1);
+        transform: scale(1.1);
+    }
+
 }
 
 textarea {

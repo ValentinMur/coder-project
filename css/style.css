@@ -1,8 +1,13 @@
+/* MIXIN */
 @import url("https://fonts.googleapis.com/css2?family=Abel&family=EB+Garamond:wght@400;500;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100&family=Secular+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Abel&family=EB+Garamond:wght@400;500;700&family=Heebo:wght@100;300;400&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100&family=Secular+One&display=swap");
+:root {
+  --ColorPrincipal: rgb(255, 255, 255);
+}
+
 .header {
   z-index: 1;
-  background-color: rgb(255, 255, 255);
+  background-color: var(--ColorPrincipal);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -68,7 +73,7 @@ a {
   flex-flow: column;
   width: 100%;
   height: 100%;
-  background-color: brown;
+  background-color: #a52a2a;
   background-image: radial-gradient(#ffffff 0.95px, brown 0.95px);
   background-size: 19px 19px;
 }
@@ -90,59 +95,50 @@ a {
   background-image: radial-gradient(#ffffff 0.95px, brown 0.95px);
   background-size: 19px 19px;
 }
-
-.empresa-container {
+.empresa .empresa-container {
   display: flex;
   flex-flow: column;
 }
-
-.empresa-title {
+.empresa .empresa-title {
   font-size: 3rem;
   color: white;
   text-align: center;
   text-shadow: 5px 5px #bb5555;
 }
-
-.empresa-paragraph {
+.empresa .empresa-paragraph {
   color: rgb(255, 255, 255);
   font-size: 1.9em;
 }
 
 /***** PRODUCTOS ******/
-.producto-grid {
-  margin-top: 2.5rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
-}
-
-.producto-title {
-  font-size: 3rem;
-  color: white;
-  text-align: center;
-  text-shadow: 5px 5px #bb5555;
-}
-
 .producto {
   padding: 10%;
   background-color: brown;
   background-image: radial-gradient(#ffffff 0.95px, brown 0.95px);
   background-size: 19px 19px;
 }
-
-.producto-box-title {
+.producto .producto-title {
+  color: black;
+  font-size: 2rem;
+  text-align: end;
+}
+.producto .producto-grid {
+  margin-top: 2.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+.producto .producto-box-title {
   font-size: 2rem;
   color: white;
   text-align: center;
 }
-
-.producto-text {
+.producto .producto-text {
   margin-top: 2rem;
   text-align: center;
   color: white;
 }
-
-.producto-img {
+.producto .producto-img {
   display: block;
   margin: 0px auto;
   max-width: 80%;
@@ -151,8 +147,7 @@ a {
      object-fit: contain;
   border-radius: 5%;
 }
-
-.producto-img-vinagre {
+.producto .producto-img-vinagre {
   display: block;
   margin: 0px auto;
   max-width: 80%;
@@ -172,14 +167,12 @@ a {
   flex-flow: column;
   align-items: center;
 }
-
-.ubicacion-button {
+.ubicacion-container .ubicacion-button {
   width: 5rem;
   height: 2.5rem;
   margin: 2rem;
 }
-
-.ubicacion-button:hover {
+.ubicacion-container .ubicacion-button:hover {
   cursor: pointer;
 }
 
@@ -200,13 +193,11 @@ form {
   margin: auto;
   background-color: #ccc;
 }
-
 form label {
   width: 4.5em;
   font-weight: lighter;
   display: inline-block;
 }
-
 form input[type=text],
 form input[type=email] {
   width: 11.25em;
@@ -217,7 +208,6 @@ form input[type=email] {
   margin: 8px 0;
   display: inline-block;
 }
-
 form input[type=submit] {
   width: 100%;
   padding: 8px 16px;
@@ -228,7 +218,6 @@ form input[type=submit] {
   color: #fff;
   background-color: #000;
 }
-
 form input[type=submit]:hover {
   cursor: pointer;
   transform: scale(1.1);
@@ -469,6 +458,19 @@ input {
 #asunto {
     width: 90%;
   }
+
+  .empresa-title {
+    font-size: 2.5rem;
+    color: white;
+    text-align: center;
+    text-shadow: 5px 5px #bb5555;
+  }
+
+  .empresa-paragraph {
+    color: rgb(255, 255, 255);
+    font-size: 1.2em;
+    text-align: center;
+  }
 }
 @media screen and (max-width: 425px) {
   .header {
@@ -528,16 +530,32 @@ input {
   }
 
   form {
-    display: flex;
-    flex-direction: column;
-    font-size: 0.6rem;
-    width: 15rem;
+    width: 12rem;
+    padding: 1.5em;
+    font-size: 0.01rem;
   }
 
   label,
 input {
     font-size: 0.9rem;
     padding: 0;
+  }
+
+  textarea {
+    height: 2rem;
+  }
+
+  .empresa-title {
+    font-size: 2.5rem;
+    color: white;
+    text-align: center;
+    text-shadow: 5px 5px #bb5555;
+  }
+
+  .empresa-paragraph {
+    color: rgb(255, 255, 255);
+    font-size: 1.2em;
+    text-align: center;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -600,15 +618,16 @@ input {
     font-weight: bold;
   }
 
-  form {
-    width: 19em;
-    font-size: 1.2rem;
-  }
-
   .footer__btn button {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  form {
+    width: 19rem;
+    padding: 1.5em;
+    font-size: 1rem;
   }
 }
 body {

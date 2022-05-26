@@ -1,6 +1,6 @@
 .header {
     z-index: 1;
-    background-color: rgb(255, 255, 255);
+    background-color: var(--ColorPrincipal);
     display: flex;
     justify-content: space-between;
     align-items: center;

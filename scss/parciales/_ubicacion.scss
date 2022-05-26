@@ -8,16 +8,14 @@
     display: flex;
     flex-flow: column;
     align-items: center;
-}
 
+    .ubicacion-button {
+        width: 5rem;
+        height: 2.5rem;
+        margin: 2rem;
+    }
 
-
-.ubicacion-button {
-    width: 5rem;
-    height: 2.5rem;
-    margin: 2rem;
-}
-
-.ubicacion-button:hover {
-    cursor: pointer;
+    .ubicacion-button:hover {
+        cursor: pointer;
+    }
 }

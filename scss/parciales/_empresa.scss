@@ -5,21 +5,23 @@
     background-color: brown;
     background-image: radial-gradient(#ffffff 0.9500000000000001px, brown 0.9500000000000001px);
     background-size: 19px 19px;
-}
 
-.empresa-container {
-    display: flex;
-    flex-flow: column;
-}
+    .empresa-container {
+        display: flex;
+        flex-flow: column;
+    }
 
-.empresa-title {
-    font-size: 3rem;
-    color: white;
-    text-align: center;
-    text-shadow: 5px 5px #bb5555;
-}
+    .empresa-title {
+        font-size: 3rem;
+        color: white;
+        text-align: center;
+        text-shadow: 5px 5px #bb5555;
+    }
 
-.empresa-paragraph {
-    color: rgb(255, 255, 255);
-    font-size: 1.9em;
+    .empresa-paragraph {
+        color: rgb(255, 255, 255);
+        font-size: 1.9em;
+    }
+
+
 }
