@@ -24,9 +24,7 @@
     }
 
     .footer-content {
-
         flex-direction: column-reverse;
-
     }
 
 }
@@ -192,6 +190,13 @@
         height: 8em;
         flex-direction: row;
         justify-content: space-evenly;
+
+        .header__icon {
+            display: block;
+            color: black;
+            font-weight: bold;
+        }
+
     }
 
     nav {
@@ -227,11 +232,6 @@
     }
 
 
-    .header__icon {
-        display: block;
-        color: black;
-        font-weight: bold;
-    }
 
     .producto-title {
         font-size: 3em;
@@ -310,6 +310,13 @@
         height: 11em;
         flex-direction: row;
         justify-content: space-evenly;
+
+        .header__icon {
+            display: block;
+            color: black;
+            font-weight: bold;
+        }
+
     }
 
     nav {
@@ -321,14 +328,13 @@
     }
 
     #lateral {
-
         display: block;
         width: 100%;
         height: 20vh;
         position: fixed;
         top: 0;
         left: -100%;
-        background-color: var(--ColorPrincipal);
+        background-color: #fff;
         transition: left 1.1s;
 
     }
@@ -345,11 +351,6 @@
     }
 
 
-    .header__icon {
-        display: block;
-        color: black;
-        font-weight: bold;
-    }
 
 
 
