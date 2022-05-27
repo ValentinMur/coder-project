@@ -2,13 +2,12 @@
 
 footer {
     margin: 2em;
-    background-color: #ffffff;
-    ;
+    background-color: var(--ColorPrincipal);
+
 }
 
 .footer-content {
     height: 20em;
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,9 +18,9 @@ footer {
     margin-left: 35%;
 
     font-weight: bold;
-    color: rgb(255, 255, 255);
+    color: var(--ColorPrincipal);
     padding: 0.5em 1.5em;
-    background-color: #a52a2a;
+    background-color: var(--ColorSecondary);
     border: none;
     border-radius: 50px;
     cursor: pointer;
@@ -29,10 +28,10 @@ footer {
 }
 
 .footer__btn button:hover {
-    background-color: white;
+    background-color: var(--ColorPrincipal);
     color: brown;
     transform: scale(1.1);
-    border: 1px solid #a52a2a;
+    border: 1px solid var(--ColorSecondary);
 }
 
 
@@ -56,15 +55,15 @@ footer {
 
 .footer__icon {
     color: black;
-    background-color: #ffffff;
+    background-color: var(--ColorPrincipal);
     transition: all 0.3s ease 0s;
     margin: auto;
 }
 
 .footer__icon:hover {
     transform: scale(1.3);
-    background-color: #a52a2a;
-    color: #ffffff;
+    background-color: var(--ColorSecondary);
+    color: var(--ColorPrincipal);
 }
 
 .footer-bottom {
@@ -79,8 +78,4 @@ footer {
     word-spacing: 2px;
     text-transform: capitalize;
 
-}
-
-.header__icon {
-    display: none;
 }

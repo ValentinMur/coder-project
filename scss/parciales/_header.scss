@@ -11,6 +11,9 @@
     position: fixed;
 
 
+    .header__icon {
+        display: none;
+    }
 }
 
 .logo {
@@ -22,11 +25,12 @@
 .nav {
     display: flex;
 
+    .nav__links {
+        list-style: none;
+    }
+
 }
 
-.nav__links {
-    list-style: none;
-}
 
 li {
     display: inline-block;
@@ -46,7 +50,7 @@ a {
 }
 
 .nav__links li a:hover {
-    color: brown;
+    color: rgb(165, 42, 42);
 
 }
 
@@ -54,7 +58,7 @@ a {
     font-weight: bold;
     color: rgb(255, 255, 255);
     padding: 9px 25px;
-    background-color: #a52a2a;
+    background-color: var(--ColorSecondary);
     border: none;
     border-radius: 3.125rem;
     cursor: pointer;
@@ -63,7 +67,7 @@ a {
 
 .btn button:hover {
     background-color: white;
-    color: brown;
+    color: rgb(165, 42, 42);
     transform: scale(1.1);
-    border: 1px solid #a52a2a;
+    border: 1px solid var(--ColorSecondary);
 }

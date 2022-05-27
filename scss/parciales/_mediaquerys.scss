@@ -58,7 +58,7 @@
         position: fixed;
         top: 0;
         left: -100%;
-        background-color: #fff;
+        background-color: var(--ColorPrincipal);
         transition: left 1s;
     }
 
@@ -79,7 +79,7 @@
     }
 
     .welcome__welcome {
-        color: #ffffff;
+        color: var(--ColorPrincipal);
         font-size: 2rem;
         text-align: center;
 
@@ -176,7 +176,7 @@
     }
 
     .empresa-paragraph {
-        color: rgb(255, 255, 255);
+        color: var(--ColorPrincipal);
         font-size: 1.2em;
         text-align: center;
     }
@@ -210,7 +210,7 @@
         position: fixed;
         top: 0;
         left: -100%;
-        background-color: #fff;
+        background-color: var(--ColorPrincipal);
         transition: left 1s;
 
     }
@@ -274,7 +274,7 @@
     }
 
     .empresa-paragraph {
-        color: rgb(255, 255, 255);
+        color: var(--ColorPrincipal);
         font-size: 1.2em;
         text-align: center;
     }
@@ -328,7 +328,7 @@
         position: fixed;
         top: 0;
         left: -100%;
-        background-color: #fff;
+        background-color: var(--ColorPrincipal);
         transition: left 1.1s;
 
     }

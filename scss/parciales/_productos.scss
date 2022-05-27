@@ -2,16 +2,12 @@
 
 .producto {
     padding: 10%;
-    background-color: brown;
+    background-color: var(--ColorSecondary);
     background-image: radial-gradient(#ffffff 0.9500000000000001px, brown 0.9500000000000001px);
     background-size: 19px 19px;
 
     .producto-title {
-
-        @include productomixin (black, 2rem, end) // font-size: 3rem;
-        // color: white;
-        // text-align: center;
-        // text-shadow: 5px 5px #bb5555;
+        @include productomixin (rgb(255, 255, 255), 3rem, center, 5px 5px #bb5555)
     }
 
     .producto-grid {
@@ -30,7 +26,7 @@
     .producto-text {
         margin-top: 2rem;
         text-align: center;
-        color: white;
+        color: var(--ColorPrincipal);
     }
 
     .producto-img {

@@ -1,8 +1,9 @@
 /* MIXIN */
 
-@mixin productomixin ($argumento1, $argumento2, $argumento3) {
+@mixin productomixin ($argumento1, $argumento2, $argumento3, $argumento4) {
 
     color: $argumento1;
     font-size: $argumento2;
     text-align: $argumento3;
+    text-shadow: $argumento4;
 }

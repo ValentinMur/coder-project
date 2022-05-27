@@ -3,7 +3,7 @@
 
 .contact-container {
     padding: 10%;
-    background-color: brown;
+    background-color: var(--ColorPrincipal);
     background-image: radial-gradient(#ffffff 0.9500000000000001px, brown 0.9500000000000001px);
     background-size: 19px 19px;
 
@@ -61,7 +61,6 @@ textarea {
     border-radius: 3px;
     background-color: #f6f6f6;
     margin: 8px 0;
-    /*resize: vertical | horizontal | none | both*/
     resize: none;
     display: block;
 }

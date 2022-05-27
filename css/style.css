@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Abel&family=EB+Garamond:wght@400;500;700&family=Heebo:wght@100;300;400&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100&family=Secular+One&display=swap");
 :root {
   --ColorPrincipal: rgb(255, 255, 255);
+  --ColorSecondary: rgb(165, 42, 42);
 }
 
 .header {
@@ -16,6 +17,9 @@
   padding: 0.3em 10%;
   position: fixed;
 }
+.header .header__icon {
+  display: none;
+}
 
 .logo {
   transition: all 0.3s;
@@ -24,8 +28,7 @@
 .nav {
   display: flex;
 }
-
-.nav__links {
+.nav .nav__links {
   list-style: none;
 }
 
@@ -46,14 +49,14 @@ a {
 }
 
 .nav__links li a:hover {
-  color: brown;
+  color: rgb(165, 42, 42);
 }
 
 .btn button {
   font-weight: bold;
   color: rgb(255, 255, 255);
   padding: 9px 25px;
-  background-color: #a52a2a;
+  background-color: var(--ColorSecondary);
   border: none;
   border-radius: 3.125rem;
   cursor: pointer;
@@ -62,9 +65,9 @@ a {
 
 .btn button:hover {
   background-color: white;
-  color: brown;
+  color: rgb(165, 42, 42);
   transform: scale(1.1);
-  border: 1px solid #a52a2a;
+  border: 1px solid var(--ColorSecondary);
 }
 
 .container__welcome {
@@ -73,7 +76,7 @@ a {
   flex-flow: column;
   width: 100%;
   height: 100%;
-  background-color: #a52a2a;
+  background-color: var(--ColorSecondary);
   background-image: radial-gradient(#ffffff 0.95px, brown 0.95px);
   background-size: 19px 19px;
 }
@@ -83,7 +86,7 @@ a {
   font-size: 3rem;
   margin-top: 3em;
   position: relative;
-  color: #ffffff;
+  color: var(--ColorPrincipal);
   text-align: center;
   text-shadow: 5px 5px #bb5555;
 }
@@ -91,7 +94,7 @@ a {
 /***** EMPRESA ******/
 .empresa {
   padding: 10%;
-  background-color: brown;
+  background-color: var(--ColorSecondary);
   background-image: radial-gradient(#ffffff 0.95px, brown 0.95px);
   background-size: 19px 19px;
 }
@@ -101,26 +104,27 @@ a {
 }
 .empresa .empresa-title {
   font-size: 3rem;
-  color: white;
+  color: var(--ColorPrincipal);
   text-align: center;
   text-shadow: 5px 5px #bb5555;
 }
 .empresa .empresa-paragraph {
-  color: rgb(255, 255, 255);
+  color: var(--ColorPrincipal);
   font-size: 1.9em;
 }
 
 /***** PRODUCTOS ******/
 .producto {
   padding: 10%;
-  background-color: brown;
+  background-color: var(--ColorSecondary);
   background-image: radial-gradient(#ffffff 0.95px, brown 0.95px);
   background-size: 19px 19px;
 }
 .producto .producto-title {
-  color: black;
-  font-size: 2rem;
-  text-align: end;
+  color: rgb(255, 255, 255);
+  font-size: 3rem;
+  text-align: center;
+  text-shadow: 5px 5px #bb5555;
 }
 .producto .producto-grid {
   margin-top: 2.5rem;
@@ -136,7 +140,7 @@ a {
 .producto .producto-text {
   margin-top: 2rem;
   text-align: center;
-  color: white;
+  color: var(--ColorPrincipal);
 }
 .producto .producto-img {
   display: block;
@@ -160,7 +164,7 @@ a {
 /***** ubicacion ******/
 .ubicacion-container {
   padding: 10%;
-  background-color: brown;
+  background-color: var(--ColorSecondary);
   background-image: radial-gradient(#ffffff 0.95px, brown 0.95px);
   background-size: 19px 19px;
   display: flex;
@@ -179,7 +183,7 @@ a {
 /***** CONTACTO ******/
 .contact-container {
   padding: 10%;
-  background-color: brown;
+  background-color: var(--ColorPrincipal);
   background-image: radial-gradient(#ffffff 0.95px, brown 0.95px);
   background-size: 19px 19px;
 }
@@ -230,7 +234,6 @@ textarea {
   border-radius: 3px;
   background-color: #f6f6f6;
   margin: 8px 0;
-  /*resize: vertical | horizontal | none | both*/
   resize: none;
   display: block;
 }
@@ -238,7 +241,7 @@ textarea {
 /**FOOTER**/
 footer {
   margin: 2em;
-  background-color: #ffffff;
+  background-color: var(--ColorPrincipal);
 }
 
 .footer-content {
@@ -252,9 +255,9 @@ footer {
 .footer__btn button {
   margin-left: 35%;
   font-weight: bold;
-  color: rgb(255, 255, 255);
+  color: var(--ColorPrincipal);
   padding: 0.5em 1.5em;
-  background-color: #a52a2a;
+  background-color: var(--ColorSecondary);
   border: none;
   border-radius: 50px;
   cursor: pointer;
@@ -262,10 +265,10 @@ footer {
 }
 
 .footer__btn button:hover {
-  background-color: white;
+  background-color: var(--ColorPrincipal);
   color: brown;
   transform: scale(1.1);
-  border: 1px solid #a52a2a;
+  border: 1px solid var(--ColorSecondary);
 }
 
 .footer_paragraph {
@@ -285,15 +288,15 @@ footer {
 
 .footer__icon {
   color: black;
-  background-color: #ffffff;
+  background-color: var(--ColorPrincipal);
   transition: all 0.3s ease 0s;
   margin: auto;
 }
 
 .footer__icon:hover {
   transform: scale(1.3);
-  background-color: #a52a2a;
-  color: #ffffff;
+  background-color: var(--ColorSecondary);
+  color: var(--ColorPrincipal);
 }
 
 .footer-bottom {
@@ -307,10 +310,6 @@ footer {
   font-size: 1em;
   word-spacing: 2px;
   text-transform: capitalize;
-}
-
-.header__icon {
-  display: none;
 }
 
 /******* MEDIA QUERIS *******/
@@ -364,7 +363,7 @@ footer {
     position: fixed;
     top: 0;
     left: -100%;
-    background-color: #fff;
+    background-color: var(--ColorPrincipal);
     transition: left 1s;
   }
 
@@ -385,7 +384,7 @@ footer {
   }
 
   .welcome__welcome {
-    color: #ffffff;
+    color: var(--ColorPrincipal);
     font-size: 2rem;
     text-align: center;
   }
@@ -467,7 +466,7 @@ input {
   }
 
   .empresa-paragraph {
-    color: rgb(255, 255, 255);
+    color: var(--ColorPrincipal);
     font-size: 1.2em;
     text-align: center;
   }
@@ -495,7 +494,7 @@ input {
     position: fixed;
     top: 0;
     left: -100%;
-    background-color: #fff;
+    background-color: var(--ColorPrincipal);
     transition: left 1s;
   }
 
@@ -553,7 +552,7 @@ input {
   }
 
   .empresa-paragraph {
-    color: rgb(255, 255, 255);
+    color: var(--ColorPrincipal);
     font-size: 1.2em;
     text-align: center;
   }
@@ -598,7 +597,7 @@ input {
     position: fixed;
     top: 0;
     left: -100%;
-    background-color: #fff;
+    background-color: var(--ColorPrincipal);
     transition: left 1.1s;
   }
 
